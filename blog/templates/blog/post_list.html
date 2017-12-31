@@ -6,6 +6,14 @@
 <body>
 	<h1>Practical Living Strategies for Patients, Families & Caregivers</h1>
 	<h2>Dementia is just a piece of the puzzle. Where do you fit in? </h2>
+
+	{% for post in posts %}
+		<div>
+			<h1>{{post.title}}</h1>
+			<p>{{ post.text|linebreaksbr }}</p>
+		</div>
+	{% endfor %}
+
 	<h3>Learn What It Takes To Enhance Quality Of Life</h3>
 		<ul>
 			<li>Dementia Consultation</li>
