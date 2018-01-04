@@ -10,15 +10,16 @@
 </head>
 <body>
 	<div class="page-header">
+		<div id="header-bar"></div>
 		<img class="img-thumbnail img-responsive" src="https://www.cityprintexpress.com/proofs/Puzzled-Mind/Logo/Puzzled-Mind-Logo-v2a1.png"><h1>Puzzled <span>Mind & Body LLC</span></h1>
+		<h2>Practical Living Strategies for Patients, Families & Caregivers</h2>
 		{% if user.is_authenticated %}
 			<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 		{% endif %}
 	</div>
-	<h2>Practical Living Strategies for Patients, Families & Caregivers</h2>
-	<h2>Dementia is just a piece of the puzzle. Where do you fit in? </h2>
-
 	<div class="content container">
+		<h2>Dementia is just a piece of the puzzle. Where do you fit in? </h2>
+	
 	    <div class="row">
 	        <div class="col-md-8">
 	        {% block content %}
@@ -27,18 +28,31 @@
 		</div>
 	</div>
 
-	<h3>Learn What It Takes To Enhance Quality Of Life</h3>
+	<div class="content container">
+		<h3>Learn What It Takes To Enhance Quality Of Life</h3>
 		<ul>
 			<li>Dementia Consultation</li>
 			<li>Dementia Seminars</li>
 			<li>Home/Facility Dementia Training</li>
 		</ul>
-	<h3>"We help you build a safe, healthy, & calm environment."</h3>
+		<h3>"We help you build a safe, healthy, & calm environment."</h3>
 		<ul>
 			<li>In Home Visits</li>
 			<li>Facility In-service</li>
 			<li>Environmental Safety Assessment</li>
 			<li>Holistic Service(s): Reiki</li>
 		</ul>
+	</div>
+
+	<footer>
+		<div class="content container">
+			<section>Copyright 2018 Puzzled Mind LLC. All rights reserved</section>
+			<aside>
+				<a href="http://www.cityhtml.com">
+					<img src="https://www.cityprintexpress.com//City%20HTML/Powered-by-CityHTML-Logo.gif">
+				</a>
+			</aside>
+		</div>
+	</footer>
 </body>
 </html>
